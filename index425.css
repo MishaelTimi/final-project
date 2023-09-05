@@ -46,6 +46,13 @@
     font-size: 14px;
   }
 
+  .flyer2{
+    width: 300px;
+    justify-content: center;
+    height: 400px;
+    box-shadow:  2px 4px 6px rgba(10, 9, 9, 0.1);
+  }
+
   .vision-mission-section, .symptoms-section, .emergency-section,
   .testimonials-section, .blog-prelude-section, .appointment-section,
   .faq-section, .footer {
