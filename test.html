@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Example</title>
+    <style>
+        /* Your CSS styles for the chat interface */
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById("chat");
+        const userInput = document.getElementById("user-input");
+
+        function appendMessage(sender, text) {
+            const messageDiv = document.createElement("div");
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+            chatContainer.appendChild(messageDiv);
+        }
+
+        function botReply(userMessage) {
+            // Implement your logic here to generate bot responses based on user input.
+            // You can use conditional statements or other algorithms to determine the response.
+
+            // Example:
+            if (userMessage.toLowerCase().includes("hello")) {
+                return "Hello! How can I assist you today?";
+            } else if (userMessage.toLowerCase().includes("help")) {
+                return "Sure, I can help. Please ask your question.";
+            } else {
+                return "I'm sorry, I don't understand. Please rephrase your question.";
+            }
+        }
+
+        function sendMessage() {
+            const userMessage = userInput.value;
+            appendMessage("You", userMessage);
+
+            // Generate and append bot response
+            const botResponse = botReply(userMessage);
+            appendMessage("Bot", botResponse);
+
+            userInput.value = ""; // Clear the input field
+        }
+    </script>
+</body>
+</html>

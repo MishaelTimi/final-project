@@ -1,0 +1,135 @@
+@media (max-width: 425px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+  
+  .search-bar {
+    margin-top: 10px; 
+  }
+
+  .vision-mission-section, .symptoms-section, .emergency-section,
+  .testimonials-section, .blog-prelude-section, .appointment-section,
+  .faq-section, .footer {
+    padding: 20px 10px;
+    display: block; 
+  }
+
+  .vision, .mission, .corevalues{
+    margin-bottom: 20px;
+  }
+
+  .symptoms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns */
+  }
+
+  .symptom-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .appointment-options {
+    flex-direction: column; 
+  }
+
+  .option {
+    margin: 10px 0; 
+  }
+
+  .faq {
+    max-width: 100%; 
+  }
+
+  .footer-content {
+    flex-direction: column; 
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .back-to-top {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px; 
+  }
+  .flyer, .flyer2{
+    width: 350px;
+   
+    height: 300px;
+    box-shadow:  2px 4px 6px rgba(10, 9, 9, 0.1);
+  }
+  .flyer2{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  
+
+
+  .vision-mission-section, .symptoms-section, .emergency-section,
+  .testimonials-section, .blog-prelude-section, .appointment-section,
+  .faq-section, .footer {
+    padding: 20px 10px;
+    display: block; 
+  }
+
+  .vision, .mission, .corevalues{
+    margin-bottom: 20px;
+  }
+
+  .symptoms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns */
+  }
+
+  .symptom-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .appointment-options {
+    flex-direction: column; 
+  }
+
+  .option {
+    margin: 10px 0; 
+  }
+
+  .faq {
+    max-width: 100%; 
+  }
+
+  .footer-content {
+    flex-direction: column; 
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .back-to-top {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px; 
+  }
+  .flyer, .flyer2{
+    width: 350px;
+   
+    height: 300px;
+    box-shadow:  2px 4px 6px rgba(10, 9, 9, 0.1);
+  }
+  .flyer2{
+    margin-left: 10px;
+  }
+}
+

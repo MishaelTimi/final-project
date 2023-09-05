@@ -1,0 +1,35 @@
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #3498db; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .back-to-home:hover {
+    background-color: #2980b9; 
+  }
+  .back-to-home a{
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 200;
+  }
+
+body{
+  background-color: #093d5f;
+}
+
+ .body{
+    background-image: url('image7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #2980b9;
+    opacity: 0.7;
+ }
+ header{
+  text-align: center;
+  color: white;
+ }
