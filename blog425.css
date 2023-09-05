@@ -9,10 +9,6 @@
       }
       
       .nav-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 0;
         background-color: #007BFF;
         width: 100%;
         display: none;
@@ -24,6 +20,7 @@
     
       .nav-menu a {
         padding: 10px 15px;
+        display: none;
       }
     
      

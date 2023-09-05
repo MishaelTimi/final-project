@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+
   
   .navbar {
     display: flex;
@@ -11,7 +8,8 @@ body {
     padding: 10px 20px;
     max-height: 50px;
     position: sticky;
-    top: 0;
+    
+  margin-right: 0;
   }
   
   
