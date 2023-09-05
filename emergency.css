@@ -18,16 +18,17 @@
   }
 
 body{
-  background-color: #093d5f;
+  background-color: #4bb1f5;
 }
 
  .body{
-    background-image: url('image7.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    background-color: #2980b9;
-    opacity: 0.7;
+    
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px rgb(102, 101, 101);
+    
  }
  header{
   text-align: center;
