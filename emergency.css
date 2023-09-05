@@ -67,6 +67,6 @@ body{
   .imga {
     max-width: 100%; /* Make the image responsive */
     height: auto;    /* Automatically adjust the height */
-    margin-left: 50px;
+    margin-left: 0;
 }
 }
