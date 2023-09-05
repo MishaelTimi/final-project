@@ -1,6 +1,17 @@
 @media (max-width: 425px) {
+  body{
+    max-width: 425px;
+  }
   .navbar {
-    padding: 10px 15px;
+    display: flex;
+    
+    align-items: center;
+    background-color: #007BFF;
+   
+    max-height: 50px;
+    position: sticky;
+    
+  margin-right: 0;
   }
   
   .logo {
@@ -9,7 +20,7 @@
   
   .nav-menu {
     background-color: #007BFF;
-    width: 100%;
+    
     display: none;
   }
 
@@ -18,7 +29,7 @@
   }
 
   .nav-menu a {
-    padding: 10px 15px;
+    padding: 10px 10px;
     display: none;
   }
 
@@ -34,11 +45,6 @@
     padding: 8px 12px;
     font-size: 14px;
   }
-
-  body{
-    width: fit-content;
-  }
-  
 
   .vision-mission-section, .symptoms-section, .emergency-section,
   .testimonials-section, .blog-prelude-section, .appointment-section,
