@@ -1,14 +1,21 @@
 @media (max-width: 425px) {
     
     
-  
+  .nav-menu a {
+    padding: 10px 10px ;
+    display: flex;
+    font-size: 5px;
+    margin-left: -50px;
+  }
+
     .logo {
       font-size: 20px;
       margin: 0;
     }
   
     .nav-menu {
-      display: none;
+      display: flex;
+      max-width: 200px;
     }
   
     .nav-menu.active {

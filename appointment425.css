@@ -2,9 +2,16 @@
     .navbar {
       padding: 10px 10px;
     }
+    .nav-menu a {
+      padding: 10px 10px ;
+      display: flex;
+      font-size: 5px;
+      margin-left: -50px;
+    }
   
     .nav-menu {
-      display: none;
+      display: flex;
+      max-width: 200px;
     }
   
     .search-bar {

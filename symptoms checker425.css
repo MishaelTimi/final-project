@@ -17,8 +17,8 @@
   
   .nav-menu {
     background-color: #007BFF;
-    
-    display: none;
+    max-width: 200px;
+    display: flex;
   }
 
   .nav-menu.active {
@@ -27,7 +27,9 @@
 
   .nav-menu a {
     padding: 10px 10px;
-    display: none;
+    display: flex;
+    font-size: 5px;
+    margin-left: -50px;
   }
 
  

@@ -10,8 +10,9 @@
       
       .nav-menu {
         background-color: #007BFF;
-        width: 100%;
-        display: none;
+      
+        display: flex;
+        max-width: 200px;
       }
     
       .nav-menu.active {
@@ -20,7 +21,9 @@
     
       .nav-menu a {
         padding: 10px 15px;
-        display: none;
+        display: flex;
+        font-size: 5px;
+        margin-left: -50px;
       }
     
      
