@@ -73,6 +73,11 @@ li a:hover{
     overflow: hidden;
   }
   
+  .images{
+    justify-content: center;
+    align-items: center;
+    margin-inline: 100px;
+  }
   .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;

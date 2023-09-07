@@ -88,7 +88,13 @@
   .faq {
     max-width: 100%; 
   }
+.images{
+  margin-left: 5px;
+}
 
+.images{
+  margin-left: -18px;
+}
  
   .flyer, .flyer2{
    
