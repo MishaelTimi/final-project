@@ -1,7 +1,5 @@
 @media (max-width: 425px) {
-  body{
-    max-width: 425px;
-  }
+  
   .navbar {
     display: flex;
     
@@ -13,7 +11,11 @@
     
   margin-right: 0;
   }
-  
+  .vision:hover, .mission:hover, .corevalues:hover {
+    transform: translateY(-5px);
+    background-color: #007BFF;
+    color: white;
+  }
   .logo {
     font-size: 20px;
   }
@@ -50,7 +52,7 @@
 
   .flyer2{
     width: 300px;
-    margin-right: 0;
+    margin-right: 200px;
     height: 400px;
     box-shadow:  2px 4px 6px rgba(10, 9, 9, 0.1);
   }
@@ -89,14 +91,13 @@
 
  
   .flyer, .flyer2{
-    width: 350px;
    
+    width: 250px;
+    margin-right: 5px;
     height: 300px;
     box-shadow:  2px 4px 6px rgba(10, 9, 9, 0.1);
   }
-  .flyer2{
-    margin-left: 10px;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -105,7 +106,6 @@
   }
 
   
-
 
   .vision-mission-section, .symptoms-section, .emergency-section,
   .testimonials-section, .blog-prelude-section, .appointment-section,
@@ -117,7 +117,11 @@
   .vision, .mission, .corevalues{
     margin-bottom: 20px;
   }
-
+  .vision:hover, .mission:hover, .corevalues:hover {
+    transform: translateY(-5px);
+    background-color: #007BFF;
+    color: white;
+  }
   .symptoms-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns */
   }

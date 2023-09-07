@@ -67,3 +67,36 @@ body{
     color: #fff; 
     font-weight: 200;
   }
+
+  @media (max-width: 425px) {
+    
+    
+    .nav-menu a {
+      padding: 10px 10px ;
+      display: flex;
+      font-size: 5px;
+      margin-left: -50px;
+    }
+  
+      .logo {
+        font-size: 20px;
+        margin: 0;
+      }
+    
+      .nav-menu {
+        display: flex;
+        max-width: 200px;
+      }
+    
+      .nav-menu.active {
+        display: flex;
+      }
+      .footer-content {
+          flex-direction: column; 
+        }
+      
+        .footer-section {
+          width: 100%;
+          margin-bottom: 20px; 
+        }
+      }
