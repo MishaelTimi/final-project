@@ -92,3 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
     navMenu.classList.toggle('active');
   });
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
