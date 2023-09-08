@@ -76,7 +76,7 @@ li a:hover{
   .images{
     justify-content: center;
     align-items: center;
-    margin-inline: 100px;
+    margin-inline: 200px;
   }
   .carousel-container {
     display: flex;
