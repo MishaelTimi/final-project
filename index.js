@@ -84,18 +84,54 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+document.getElementById('mobile-body-overly').style.display = (document.getElementById('mobile-body-overly').style.display === 'block') ? 'none' : 'block';
+;
 
-  menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-  });
+  if (document.getElementById('mobile-nav') && document.getElementById('mobile-nav-toggle')) {
+document.getElementById('mobile-nav').style.display = 'none';
+document.getElementById('mobile-nav-toggle').style.display = 'none';
+}
+
+// Smooth scrolling on the navbar links
+var navMenuLinks = document.querySelectorAll('.nav-menu a, #mobile-nav a');
+navMenuLinks.forEach(function (link) {
+link.addEventListener('click', function (event) {
+if (this.hash !== "") {
+event.preventDefault();
+
+var targetElement = document.querySelector(this.hash);
+if (targetElement) {
+var offsetTop = targetElement.offsetTop;
+
+document.documentElement.style.scrollBehavior = 'smooth';
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+document.documentElement.style.scrollBehavior = 'auto';
+}
+
+if (this.closest('.nav-menu')) {
+var activeMenuItem = document.querySelector('.nav-menu .menu-active');
+if (activeMenuItem) {
+activeMenuItem.classList.remove('menu-active');
+}
+this.closest('li').classList.add('menu-active');
+}
+}
+});
 });
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".navbar");
+// Stick the header at the top on scroll
+var header = document.querySelector(".navbar");
+if (header) {
+var headerHeight = header.offsetHeight;
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+window.addEventListener('scroll', function () {
+if (window.scrollY >= headerHeight) {
+header.classList.add('sticky');
+} else {
+header.classList.remove('sticky');
+}
 });
+}

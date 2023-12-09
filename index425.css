@@ -23,11 +23,11 @@
   .nav-menu {
     background-color: #007BFF;
     max-width: 200px;
-    display: flex;
+    display: none;
   }
 
   .nav-menu.active {
-    display: flex;
+    display: block;
   }
 
   .nav-menu a {
